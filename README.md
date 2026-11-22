@@ -8,9 +8,10 @@ Menu bar utilities for macOS: Pomodoro, power-off timer, screen recording, music
 
 ```bash
 brew tap cs-tungthanh/tap
+brew trust cs-tungthanh/tap
 brew install nook
 ```
 
-Update with `brew upgrade nook`, remove with `brew uninstall nook`.
+`brew trust` lets Homebrew install from this tap; Homebrew asks this once for any tap outside its own. Update with `brew upgrade nook`, remove with `brew uninstall nook`.
 
 `Casks/nook.rb` is updated automatically by Nook's release workflow; don't edit it by hand.
